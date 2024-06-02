@@ -1,0 +1,13 @@
+package Observer.Observable;
+
+import Observer.Observers.VacancyAlertObserver;
+
+public interface JobVacancyObservable {
+    void add(VacancyAlertObserver vacancyAlertObserver);
+
+    void remove(VacancyAlertObserver vacancyAlertObserver);
+    void notifyObservers();
+    void setJobOpenings(int numVacancies);
+
+    int getJobOpenings();
+}

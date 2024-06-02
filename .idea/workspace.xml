@@ -4,39 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Creational Design Pattern in Java">
-      <change afterPath="$PROJECT_DIR$/src/Adapter/AndroidAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/AndroidCharger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/IPhone15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/IPhone15Charger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/IPhoneCharger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/SamsungS24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/SamsungS24Charger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/CustomIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/UserIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/UserManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/InterfaceSegment/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/InterfaceSegment/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/LiskovSubstitution/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/LiskovSubstitution/Reel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/LiskovSubstitution/Upload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/EMAIL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/SMS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/SendMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/VoiceMail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/Invoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/PrintInvoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/SaveToDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/CustomPlan/CustomDataPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/CustomPlan/DataPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/CustomPlan/TalkTimePlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/CustomPlan/ValidityPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/IncreaseValidityPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/Plan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/SeniorCtznPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strategy/StudentPlan.java" afterDir="false" />
+    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="More Design Pattern in Java">
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observable/GovtJobObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observable/ITJobObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observable/JobVacancyObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observable/TeachingJobObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observers/EmailObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observers/SMSObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observers/VacancyAlertObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observers/WebSiteObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -126,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712482008439</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="More Design Pattern in Java">
+      <option name="closed" value="true" />
+      <created>1717271489351</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717271489351</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creational Design Pattern in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creational Design Pattern in Java" />
+    <MESSAGE value="More Design Pattern in Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="More Design Pattern in Java" />
   </component>
 </project>

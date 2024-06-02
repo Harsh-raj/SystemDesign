@@ -11,6 +11,12 @@ import Iterator.CustomIterator;
 import Iterator.User;
 import Iterator.UserIterator;
 import Iterator.UserManagement;
+import Observer.Observable.GovtJobObservable;
+import Observer.Observable.ITJobObservable;
+import Observer.Observable.TeachingJobObservable;
+import Observer.Observers.EmailObserver;
+import Observer.Observers.SMSObserver;
+import Observer.Observers.WebSiteObserver;
 import Prototype.Cake;
 import SOLID.LiskovSubstitution.Post;
 import SOLID.LiskovSubstitution.Reel;
@@ -122,11 +128,26 @@ public class Main {
 //        IPhone15 iPhone15_1 = new IPhone15(adapterCharger);
 //        iPhone15_1.chargeIPhone();
 
-        StudentPlan studentPlan = new StudentPlan();
-        studentPlan.recharge();
-        SeniorCtznPlan seniorplan = new SeniorCtznPlan();
-        seniorplan.recharge();
-        IncreaseValidityPlan validityPlan = new IncreaseValidityPlan();
-        validityPlan.recharge();
+//        StudentPlan studentPlan = new StudentPlan();
+//        studentPlan.recharge();
+//        SeniorCtznPlan seniorplan = new SeniorCtznPlan();
+//        seniorplan.recharge();
+//        IncreaseValidityPlan validityPlan = new IncreaseValidityPlan();
+//        validityPlan.recharge();
+
+        GovtJobObservable govtJobObservable = new GovtJobObservable();
+        ITJobObservable itJobObservable = new ITJobObservable();
+        TeachingJobObservable teachingJobObservable = new TeachingJobObservable();
+
+        govtJobObservable.add(new EmailObserver("rajharsh209@gmail.com"));
+        govtJobObservable.add(new SMSObserver("9902233412"));
+        govtJobObservable.add(new WebSiteObserver());
+        itJobObservable.add(new EmailObserver("2022csm1004@college.com"));
+        itJobObservable.add(new WebSiteObserver());
+        teachingJobObservable.add(new WebSiteObserver());
+
+        govtJobObservable.setJobOpenings(10);
+        itJobObservable.setJobOpenings(3);
+        teachingJobObservable.setJobOpenings(5);
     }
 }
