@@ -1,44 +1,16 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-import AbstractFactory.AbstractFactory;
-import AbstractFactory.FactoryProducer;
-import Adapter.*;
-import Builder.AppleSmartPhone;
-import Builder.Director;
-import Builder.SamsungSmartPhone;
-import Builder.SmartPhone;
-import Decorator.AddOns.*;
-import Decorator.Burger;
-import Decorator.Meal;
-import Iterator.CustomIterator;
-import Iterator.User;
-import Iterator.UserIterator;
-import Iterator.UserManagement;
-import Observer.Observable.GovtJobObservable;
-import Observer.Observable.ITJobObservable;
-import Observer.Observable.TeachingJobObservable;
-import Observer.Observers.EmailObserver;
-import Observer.Observers.SMSObserver;
-import Observer.Observers.WebSiteObserver;
-import Prototype.Cake;
-import SOLID.LiskovSubstitution.Post;
-import SOLID.LiskovSubstitution.Reel;
-import SOLID.OpenClosePrinciple.EMAIL;
-import SOLID.OpenClosePrinciple.SMS;
-import SOLID.OpenClosePrinciple.SendMessage;
-import SOLID.OpenClosePrinciple.VoiceMail;
-import SOLID.SingleResponsibility.Book;
-import SOLID.SingleResponsibility.Invoice;
-import SOLID.SingleResponsibility.PrintInvoice;
-import SOLID.SingleResponsibility.SaveToDB;
-import Strategy.CustomPlan.DataPlan;
-import Strategy.CustomPlan.ValidityPlan;
-import Strategy.IncreaseValidityPlan;
-import Strategy.Plan;
-import Strategy.SeniorCtznPlan;
-import Strategy.StudentPlan;
-
-import java.sql.SQLOutput;
+import ChainofCommand.Log.DebugLogger;
+import ChainofCommand.Log.ErrorLogger;
+import ChainofCommand.Log.InfoLogger;
+import ChainofCommand.Log.Logger;
+import ChainofCommand.Login.AdminLogin;
+import ChainofCommand.Login.Login;
+import ChainofCommand.Login.StudentLogin;
+import ChainofCommand.Login.TeacherLogin;
+import Composite.Directory;
+import Composite.File;
+import Composite.FileSystem;
 
 public class Main {
     public static void main(String[] args) {
@@ -153,8 +125,28 @@ public class Main {
 //        itJobObservable.setJobOpenings(3);
 //        teachingJobObservable.setJobOpenings(5);
 
-        Burger burger = new Bacon(new Mayonnaise(new Lettuce(new CheeseSlice(new Burger()))));
-        burger.display();
-        System.out.println("\nPrice of the Burger: "+burger.getPrice());
+//        Burger burger = new Bacon(new Mayonnaise(new Lettuce(new CheeseSlice(new Burger()))));
+//        burger.display();
+//        System.out.println("\nPrice of the Burger: "+burger.getPrice());
+
+//        Logger logger = new InfoLogger(new DebugLogger(new ErrorLogger(null)));
+//        logger.log(Logger.ERROR, "EXCEPTION CAUGHT");
+//        logger.log(Logger.DEBUG, "DEBUG REQUIRED");
+//        logger.log(Logger.INFO, "INFO PROVIDED");
+//
+//        Login login = new StudentLogin(new TeacherLogin(new AdminLogin(null)));
+//        login.log(Login.STUDENT, "harsh_1004");
+//        login.log(Login.TEACHER, "Dr.harsh_1004");
+//        login.log(Login.ADMIN, "admin");
+
+        Directory FTP = new Directory("Movies");
+        FTP.add(new Directory("Comedy").add(new File("Hangover")).add(new File("Ace Venturas")));
+        FTP.add(new Directory("Action").add(new File("The Outlaw")).add(new File("RoadHouse")).add(new File("Never back down")));
+        FTP.add(new Directory("BioPic").add(new File("Wolf of wall street")).add(new File("The man who knew infinity")).add(new File("Narcos")));
+        FTP.add(new Directory("Horror").add(new File("IT")).add(new File("Incidious")).add(new File("Conjuring")));
+
+        FTP.add(new File("Salt"));
+        FTP.add(new File("Salt2"));
+        FTP.ls();
     }
 }
