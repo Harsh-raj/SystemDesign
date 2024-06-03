@@ -1,6 +1,4 @@
-package Composite;
-
-import java.util.Objects;
+package Composite.StorageFileSystem;
 
 public class File implements FileSystem {
 

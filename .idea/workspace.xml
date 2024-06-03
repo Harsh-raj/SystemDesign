@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Observer Design Pattern in Java">
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Log/DebugLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Log/ErrorLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Log/InfoLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Log/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Login/AdminLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Login/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Login/StudentLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainofCommand/Login/TeacherLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/Directory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/FileSystem.java" afterDir="false" />
+    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Chain of command and Composite Design Pattern in Java">
+      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/ArithmeticExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/Number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/ECommerceFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/Service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/Service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/Service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/Service/ShipService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Composite/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Composite/StorageFileSystem/Directory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Composite/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Composite/StorageFileSystem/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Composite/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Composite/StorageFileSystem/FileSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +30,7 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -83,6 +85,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Facade" />
       <recent name="Strategy" />
       <recent name="Adapter" />
       <recent name="Iterator" />
@@ -130,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717347067123</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Chain of command and Composite Design Pattern in Java">
+      <option name="closed" value="true" />
+      <created>1717432224880</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717432224880</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +171,7 @@
     <MESSAGE value="Creational Design Pattern in Java" />
     <MESSAGE value="More Design Pattern in Java" />
     <MESSAGE value="Observer Design Pattern in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Observer Design Pattern in Java" />
+    <MESSAGE value="Chain of command and Composite Design Pattern in Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chain of command and Composite Design Pattern in Java" />
   </component>
 </project>

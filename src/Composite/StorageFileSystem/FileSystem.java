@@ -1,4 +1,4 @@
-package Composite;
+package Composite.StorageFileSystem;
 
 public interface FileSystem {
     void ls();

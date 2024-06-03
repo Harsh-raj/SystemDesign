@@ -1,16 +1,15 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-import ChainofCommand.Log.DebugLogger;
-import ChainofCommand.Log.ErrorLogger;
-import ChainofCommand.Log.InfoLogger;
-import ChainofCommand.Log.Logger;
-import ChainofCommand.Login.AdminLogin;
-import ChainofCommand.Login.Login;
-import ChainofCommand.Login.StudentLogin;
-import ChainofCommand.Login.TeacherLogin;
-import Composite.Directory;
-import Composite.File;
-import Composite.FileSystem;
+import Composite.Calculator.Expression;
+import Composite.Calculator.Operation;
+import Composite.Calculator.Number;
+import Composite.StorageFileSystem.Directory;
+import Composite.StorageFileSystem.File;
+import Facade.ECommerceFacade;
+import Facade.Service.NotificationService;
+import Facade.Service.OrderService;
+import Facade.Service.PaymentService;
+import Facade.Service.ShipService;
 
 public class Main {
     public static void main(String[] args) {
@@ -139,14 +138,21 @@ public class Main {
 //        login.log(Login.TEACHER, "Dr.harsh_1004");
 //        login.log(Login.ADMIN, "admin");
 
-        Directory FTP = new Directory("Movies");
-        FTP.add(new Directory("Comedy").add(new File("Hangover")).add(new File("Ace Venturas")));
-        FTP.add(new Directory("Action").add(new File("The Outlaw")).add(new File("RoadHouse")).add(new File("Never back down")));
-        FTP.add(new Directory("BioPic").add(new File("Wolf of wall street")).add(new File("The man who knew infinity")).add(new File("Narcos")));
-        FTP.add(new Directory("Horror").add(new File("IT")).add(new File("Incidious")).add(new File("Conjuring")));
+//        Directory FTP = new Directory("Movies");
+//        FTP.add(new Directory("Comedy").add(new File("Hangover")).add(new File("Ace Venturas")));
+//        FTP.add(new Directory("Action").add(new File("The Outlaw")).add(new File("RoadHouse")).add(new File("Never back down")));
+//        FTP.add(new Directory("BioPic").add(new File("Wolf of wall street")).add(new File("The man who knew infinity")).add(new File("Narcos")));
+//        FTP.add(new Directory("Horror").add(new File("IT")).add(new File("Incidious")).add(new File("Conjuring")));
+//
+//        FTP.add(new File("Salt"));
+//        FTP.add(new File("Salt2"));
+//        FTP.ls();
 
-        FTP.add(new File("Salt"));
-        FTP.add(new File("Salt2"));
-        FTP.ls();
+//        Expression e = new Expression( new Number(288), Operation.DIVIDE, new Expression(new Number(4), Operation.MULTIPLY, new Expression(new Number(9), Operation.PLUS, new Number(9)))); //change the order of creation of expression to get correct answer
+//        e.display();
+//        System.out.println(" = "+e.evaluate());
+
+        ECommerceFacade eCommerceFacade = new ECommerceFacade(new OrderService(), new PaymentService(), new ShipService(), new NotificationService());
+        eCommerceFacade.placeOrder("Books");
     }
 }
