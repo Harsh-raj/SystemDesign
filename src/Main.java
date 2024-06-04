@@ -11,6 +11,14 @@ import Facade.Service.NotificationService;
 import Facade.Service.OrderService;
 import Facade.Service.PaymentService;
 import Facade.Service.ShipService;
+import Visitor.Element.PGStudent;
+import Visitor.Element.PHDStudent;
+import Visitor.Element.UGStudent;
+import Visitor.Student;
+import Visitor.Visitor.HostleFeesVisitor;
+import Visitor.Visitor.MessFeesVisitor;
+import Visitor.Visitor.StudentVisitor;
+import Visitor.Visitor.TuitionFeesVisitor;
 
 public class Main {
     public static void main(String[] args) {
@@ -156,14 +164,22 @@ public class Main {
 //        ECommerceFacade eCommerceFacade = new ECommerceFacade(new OrderService(), new PaymentService(), new ShipService(), new NotificationService());
 //        eCommerceFacade.placeOrder("Books");
 
-        Cook cook = new Cook(new UseCook());
-        cook.use();
-        Temperature temperature = new Temperature(new UseTemperature());
-        temperature.use();
-        Lights lights = new Lights(new UseLights());
-        lights.use();
-        cook.use();
-        temperature.use();
-        lights.use();
+//        Cook cook = new Cook(new UseCook());
+//        cook.use();
+//        Temperature temperature = new Temperature(new UseTemperature());
+//        temperature.use();
+//        Lights lights = new Lights(new UseLights());
+//        lights.use();
+//        cook.use();
+//        temperature.use();
+//        lights.use();
+
+        new UGStudent(new HostleFeesVisitor()).pay();
+        new UGStudent(new MessFeesVisitor()).pay();
+        new PHDStudent(new TuitionFeesVisitor()).pay();
+        new PHDStudent(new HostleFeesVisitor()).pay();
+        new PGStudent(new TuitionFeesVisitor()).pay();
+        new PGStudent(new MessFeesVisitor()).pay();
+
     }
 }
