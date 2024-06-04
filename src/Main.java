@@ -1,5 +1,6 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
+import Bridge.*;
 import Composite.Calculator.Expression;
 import Composite.Calculator.Operation;
 import Composite.Calculator.Number;
@@ -152,7 +153,17 @@ public class Main {
 //        e.display();
 //        System.out.println(" = "+e.evaluate());
 
-        ECommerceFacade eCommerceFacade = new ECommerceFacade(new OrderService(), new PaymentService(), new ShipService(), new NotificationService());
-        eCommerceFacade.placeOrder("Books");
+//        ECommerceFacade eCommerceFacade = new ECommerceFacade(new OrderService(), new PaymentService(), new ShipService(), new NotificationService());
+//        eCommerceFacade.placeOrder("Books");
+
+        Cook cook = new Cook(new UseCook());
+        cook.use();
+        Temperature temperature = new Temperature(new UseTemperature());
+        temperature.use();
+        Lights lights = new Lights(new UseLights());
+        lights.use();
+        cook.use();
+        temperature.use();
+        lights.use();
     }
 }

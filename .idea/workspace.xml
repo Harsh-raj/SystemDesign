@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Chain of command and Composite Design Pattern in Java">
-      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/ArithmeticExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/Calculator/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/ECommerceFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/Service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/Service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/Service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/Service/ShipService.java" afterDir="false" />
+    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Composite and Facade Design Pattern in Java">
+      <change afterPath="$PROJECT_DIR$/src/Bridge/AutomateFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bridge/Cook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bridge/HomeAutomation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bridge/Lights.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bridge/Temperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bridge/UseCook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bridge/UseLights.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bridge/UseTemperature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Composite/StorageFileSystem/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Composite/StorageFileSystem/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Composite/StorageFileSystem/FileSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -141,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717432224880</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Composite and Facade Design Pattern in Java">
+      <option name="closed" value="true" />
+      <created>1717456239248</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717456239249</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +176,7 @@
     <MESSAGE value="More Design Pattern in Java" />
     <MESSAGE value="Observer Design Pattern in Java" />
     <MESSAGE value="Chain of command and Composite Design Pattern in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chain of command and Composite Design Pattern in Java" />
+    <MESSAGE value="Composite and Facade Design Pattern in Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Composite and Facade Design Pattern in Java" />
   </component>
 </project>
