@@ -11,6 +11,14 @@ import Facade.Service.NotificationService;
 import Facade.Service.OrderService;
 import Facade.Service.PaymentService;
 import Facade.Service.ShipService;
+import NullObject.NullOption;
+import NullObject.Options;
+import NullObject.Question;
+import NullObject.Quiz;
+import Proxy.Admin;
+import Proxy.ChatGroupMember;
+import Proxy.ChatGroupProxy;
+import Proxy.Member;
 import Visitor.Element.PGStudent;
 import Visitor.Element.PHDStudent;
 import Visitor.Element.UGStudent;
@@ -19,6 +27,11 @@ import Visitor.Visitor.HostleFeesVisitor;
 import Visitor.Visitor.MessFeesVisitor;
 import Visitor.Visitor.StudentVisitor;
 import Visitor.Visitor.TuitionFeesVisitor;
+
+import java.util.Arrays;
+import java.util.EnumSet;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -174,12 +187,47 @@ public class Main {
 //        temperature.use();
 //        lights.use();
 
-        new UGStudent(new HostleFeesVisitor()).pay();
-        new UGStudent(new MessFeesVisitor()).pay();
-        new PHDStudent(new TuitionFeesVisitor()).pay();
-        new PHDStudent(new HostleFeesVisitor()).pay();
-        new PGStudent(new TuitionFeesVisitor()).pay();
-        new PGStudent(new MessFeesVisitor()).pay();
+//        new UGStudent(new HostleFeesVisitor()).pay();
+//        new UGStudent(new MessFeesVisitor()).pay();
+//        new PHDStudent(new TuitionFeesVisitor()).pay();
+//        new PHDStudent(new HostleFeesVisitor()).pay();
+//        new PGStudent(new TuitionFeesVisitor()).pay();
+//        new PGStudent(new MessFeesVisitor()).pay();
 
+//        ChatGroupMember chatGroupMember1 = new ChatGroupProxy(new Admin());
+//        chatGroupMember1.post();
+//        chatGroupMember1.react();
+//        chatGroupMember1.poll();
+//        chatGroupMember1.delete();
+//        ChatGroupMember chatGroupMember2 = new ChatGroupProxy(new Member());
+//        chatGroupMember2.post();
+//        chatGroupMember2.react();
+//        chatGroupMember2.poll();
+//        chatGroupMember2.delete();
+//        new ChatGroupProxy(new Admin() {
+//            @Override
+//            public void post() {
+//                throw new RuntimeException();
+//            }
+//
+//            @Override
+//            public void react() {
+//                throw new RuntimeException();
+//            }
+//
+//            @Override
+//            public void poll() {
+//                throw new RuntimeException();
+//            }
+//
+//            @Override
+//            public void delete() {
+//                throw new RuntimeException();
+//            }
+//        }).delete(0);
+
+        new Quiz(EnumSet.of(Options.A, Options.D)).start(NullOption.INSTANCE);
+        new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.C));
+        new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.B));
     }
 }

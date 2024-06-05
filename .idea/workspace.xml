@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Bridge Design Pattern in Java">
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Element/PGStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Element/PHDStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Element/StudentElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Element/UGStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Visitor/HostleFeesVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Visitor/MessFeesVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Visitor/StudentVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Visitor/TuitionFeesVisitor.java" afterDir="false" />
+    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Visitor Design Pattern in Java">
+      <change afterPath="$PROJECT_DIR$/src/NullObject/NullOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/Option.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/Options.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proxy/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proxy/ChatGroupMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proxy/ChatGroupProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proxy/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -27,8 +27,8 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -152,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717497358811</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Visitor Design Pattern in Java">
+      <option name="closed" value="true" />
+      <created>1717510051994</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717510051995</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +193,7 @@
     <MESSAGE value="Chain of command and Composite Design Pattern in Java" />
     <MESSAGE value="Composite and Facade Design Pattern in Java" />
     <MESSAGE value="Bridge Design Pattern in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bridge Design Pattern in Java" />
+    <MESSAGE value="Visitor Design Pattern in Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Visitor Design Pattern in Java" />
   </component>
 </project>
