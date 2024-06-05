@@ -229,5 +229,6 @@ public class Main {
         new Quiz(EnumSet.of(Options.A, Options.D)).start(NullOption.INSTANCE);
         new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.C));
         new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.B));
+        new Quiz(EnumSet.of(Options.B, Options.C)).start();
     }
 }

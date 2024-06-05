@@ -16,14 +16,14 @@ public class Quiz {
     public void start() {
         try {
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Enter your options for answer: ");
+            System.out.print("Enter your options for answer[A as 1, B as 2, C as 3, D as 4, none as <empty input>]: ");
             String[] input = scanner.nextLine().split(",");
-            EnumSet<Options> userAnswer = null;
+            EnumSet<Options> userAnswer = null ;
             if (input.length == 0) {
                 userAnswer = NullOption.INSTANCE;
             } else {
+                userAnswer = EnumSet.noneOf(Options.class);
 
-                //EnumSet<Options> userAnswer = EnumSet.noneOf(Options.class);
                 for (String s : input) {
                     int optionIndex = Integer.parseInt(s.trim()) - 1;
                     if (optionIndex >= 0 && optionIndex < Options.values().length) {
@@ -37,8 +37,12 @@ public class Quiz {
                 System.out.println("Correct Answer\n");
                 ++score;
             } else {
-                System.out.println("Wrong Answer, the Correct answer is "+question.getCorrectAnswers()+"\n");
-                --score;
+                if(userAnswer.isEmpty()) {
+                    System.out.println("You didn't select any from given options, the Correct answer is "+question.getCorrectAnswers()+"\n");
+                }else {
+                    System.out.println("Wrong Answer, the Correct answer is "+question.getCorrectAnswers()+"\n");
+                    --score;
+                }
             }
         }catch(IllegalArgumentException e){
             System.out.println("Invalid Input");
