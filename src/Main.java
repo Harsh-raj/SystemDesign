@@ -1,37 +1,11 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-import Bridge.*;
-import Composite.Calculator.Expression;
-import Composite.Calculator.Operation;
-import Composite.Calculator.Number;
-import Composite.StorageFileSystem.Directory;
-import Composite.StorageFileSystem.File;
-import Facade.ECommerceFacade;
-import Facade.Service.NotificationService;
-import Facade.Service.OrderService;
-import Facade.Service.PaymentService;
-import Facade.Service.ShipService;
-import NullObject.NullOption;
-import NullObject.Options;
-import NullObject.Question;
-import NullObject.Quiz;
-import Proxy.Admin;
-import Proxy.ChatGroupMember;
-import Proxy.ChatGroupProxy;
-import Proxy.Member;
-import Visitor.Element.PGStudent;
-import Visitor.Element.PHDStudent;
-import Visitor.Element.UGStudent;
-import Visitor.Student;
-import Visitor.Visitor.HostleFeesVisitor;
-import Visitor.Visitor.MessFeesVisitor;
-import Visitor.Visitor.StudentVisitor;
-import Visitor.Visitor.TuitionFeesVisitor;
-
-import java.util.Arrays;
-import java.util.EnumSet;
-import java.util.HashSet;
-import java.util.Set;
+import State.PrintOnline.PrintWorks;
+import State.PrintOnline.States.PrinterStates;
+import State.PrintOnline.Token;
+import State.VendingMachine.Coin;
+import State.VendingMachine.States.VendingState;
+import State.VendingMachine.VendingMachine;
 
 public class Main {
     public static void main(String[] args) {
@@ -226,9 +200,80 @@ public class Main {
 //            }
 //        }).delete(0);
 
-        new Quiz(EnumSet.of(Options.A, Options.D)).start(NullOption.INSTANCE);
-        new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.C));
-        new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.B));
-        new Quiz(EnumSet.of(Options.B, Options.C)).start();
+//        new Quiz(EnumSet.of(Options.A, Options.D)).start(NullOption.INSTANCE);
+//        new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.C));
+//        new Quiz(EnumSet.of(Options.A, Options.C)).start(EnumSet.of(Options.A, Options.B));
+//        new Quiz(EnumSet.of(Options.B, Options.C)).start();
+
+//        VendingMachine vendingMachine = new VendingMachine();
+//        try {
+//
+//            System.out.println("|");
+//            System.out.println("filling up the inventory");
+//            System.out.println("|");
+//
+//            VendingMachine.fillUpInventory(vendingMachine);
+//            VendingMachine.displayInventory(vendingMachine);
+//
+//            System.out.println("|");
+//            System.out.println("clicking on InsertCoinButton");
+//            System.out.println("|");
+//
+//            VendingState vendingState = vendingMachine.getVendingMachineState();
+//            vendingState.clickOnInsertCoinButton(vendingMachine);
+//
+//            vendingState = vendingMachine.getVendingMachineState();
+//            vendingState.insertCoin(vendingMachine, Coin.NICKEL);
+//            vendingState.insertCoin(vendingMachine, Coin.QUARTER);
+//            // vendingState.insertCoin(vendingMachine, Coin.NICKEL);
+//
+//            System.out.println("|");
+//            System.out.println("clicking on ProductSelectionButton");
+//            System.out.println("|");
+//            vendingState.clickOnStartProductSelectionButton(vendingMachine);
+//
+//            vendingState = vendingMachine.getVendingMachineState();
+//            vendingState.chooseProduct(vendingMachine, 102);
+//
+//            VendingMachine.displayInventory(vendingMachine);
+//        }
+//        catch (Exception e){
+//            VendingMachine.displayInventory(vendingMachine);
+//        }
+
+        PrintWorks printWorks = new PrintWorks();
+        try {
+
+            System.out.println("|");
+            System.out.println("filling up the Printer Batch");
+            System.out.println("|");
+
+            PrintWorks.fillUpInventory(printWorks);
+            PrintWorks.displayInventory(printWorks);
+
+            System.out.println("|");
+            System.out.println("clicking on InsertTokenButton");
+            System.out.println("|");
+
+            PrinterStates printerStates = printWorks.getPrinterState();
+            printerStates.clickOnInsertTokenButton(printWorks);
+
+            printerStates = printWorks.getPrinterState();
+            printerStates.insertToken(printWorks, Token.FIVE);
+//            printerStates.insertToken(printWorks, Token.TWO);
+
+            System.out.println("|");
+            System.out.println("clicking on PrinterSpaceSelectionButton");
+            System.out.println("|");
+            printerStates.clickOnStartPrinterSelectionButton(printWorks);
+
+            printerStates = printWorks.getPrinterState();
+            printerStates.choosePrinter(printWorks, 102);
+
+            PrintWorks.displayInventory(printWorks);
+        }
+        catch (Exception e){
+            PrintWorks.displayInventory(printWorks);
+        }
     }
 }
