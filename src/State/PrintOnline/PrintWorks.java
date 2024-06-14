@@ -21,6 +21,7 @@ public class PrintWorks {
     }
 
     public PrintWorks() {
+        System.out.println("********Welcome*******\nPlease Insert tokens then choose a printer and upload files to be printed.\nOn successful processing of your order payment, it would be delivered to you.");
         printerState = new IdlePrinterState();
         printerBatch = new PrinterBatch(10);
         tokenList = new ArrayList<>();

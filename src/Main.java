@@ -1,5 +1,9 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
+import Command.*;
+import FlyWeight.RolePlayingGame.*;
+import FlyWeight.WordProcessor.ILetter;
+import FlyWeight.WordProcessor.LetterFactor;
 import State.PrintOnline.PrintWorks;
 import State.PrintOnline.States.PrinterStates;
 import State.PrintOnline.Token;
@@ -241,39 +245,80 @@ public class Main {
 //            VendingMachine.displayInventory(vendingMachine);
 //        }
 
-        PrintWorks printWorks = new PrintWorks();
-        try {
+//        PrintWorks printWorks = new PrintWorks();
+//        try {
+//
+//            System.out.println("|");
+//            System.out.println("filling up the Printer Batch");
+//            System.out.println("|");
+//
+//            PrintWorks.fillUpInventory(printWorks);
+//            PrintWorks.displayInventory(printWorks);
+//
+//            System.out.println("|");
+//            System.out.println("clicking on InsertTokenButton");
+//            System.out.println("|");
+//
+//            PrinterStates printerStates = printWorks.getPrinterState();
+//            printerStates.clickOnInsertTokenButton(printWorks);
+//
+//            printerStates = printWorks.getPrinterState();
+//            printerStates.insertToken(printWorks, Token.FIVE);
+//            printerStates.insertToken(printWorks, Token.TEN);
+//
+//            System.out.println("|");
+//            System.out.println("clicking on PrinterSpaceSelectionButton");
+//            System.out.println("|");
+//            printerStates.clickOnStartPrinterSelectionButton(printWorks);
+//
+//            printerStates = printWorks.getPrinterState();
+//            printerStates.choosePrinter(printWorks, 104);
+//
+//            PrintWorks.displayInventory(printWorks);
+//        }
+//        catch (Exception e){
+//            PrintWorks.displayInventory(printWorks);
+//        }
 
-            System.out.println("|");
-            System.out.println("filling up the Printer Batch");
-            System.out.println("|");
+//        PlayerTeam playerSAS1 = TeamBarracks.createPlayer("SAS");
+//        assert playerSAS1 != null;
+//        playerSAS1.display(0, 10);
+//
+//        PlayerTeam playerSPETSNAZ1 = TeamBarracks.createPlayer("SPETSNAZ");
+//        assert playerSPETSNAZ1 != null;
+//        playerSPETSNAZ1.display(100, 10);
+//
+//        PlayerTeam playerSAS2 = TeamBarracks.createPlayer("SAS");
+//        assert playerSAS2 != null;
+//        playerSAS2.display(0, 20);
+//
+//        PlayerTeam playerSPETSNAZ = TeamBarracks.createPlayer("SPETSNAZ");
+//        assert playerSPETSNAZ != null;
+//        playerSPETSNAZ.display(100, 20);
+//
+//        ILetter object1 = LetterFactor.crateLetter('t');
+//        object1.display(0,0);
+//
+//        ILetter object2 = LetterFactor.crateLetter('t');
+//        object2.display(0,6);
 
-            PrintWorks.fillUpInventory(printWorks);
-            PrintWorks.displayInventory(printWorks);
+//        DronePrototype dronePrototype = new DronePrototype();
+//        Controller controller = new Controller();
+//
+//        controller.setCommand(new DroneFlyUpCommand(dronePrototype))
+//                .setCommand(new DroneFlyDownCommand(dronePrototype))
+//                .setCommand(new DroneMoveForward(dronePrototype))
+//                .setCommand(new DroneMoveBackward(dronePrototype))
+//                .setCommand(new DroneDirectionCommand(dronePrototype))
+//                .setCommand(new DroneStayStable(dronePrototype));
+//
+//        controller.pressButton(0);
+//        controller.pressButton(5);
+//        controller.pressButton(4);
+//        controller.pressButton(2);
+//        controller.pressButton(5);
+//        controller.pressButton(1);
 
-            System.out.println("|");
-            System.out.println("clicking on InsertTokenButton");
-            System.out.println("|");
 
-            PrinterStates printerStates = printWorks.getPrinterState();
-            printerStates.clickOnInsertTokenButton(printWorks);
-
-            printerStates = printWorks.getPrinterState();
-            printerStates.insertToken(printWorks, Token.FIVE);
-//            printerStates.insertToken(printWorks, Token.TWO);
-
-            System.out.println("|");
-            System.out.println("clicking on PrinterSpaceSelectionButton");
-            System.out.println("|");
-            printerStates.clickOnStartPrinterSelectionButton(printWorks);
-
-            printerStates = printWorks.getPrinterState();
-            printerStates.choosePrinter(printWorks, 102);
-
-            PrintWorks.displayInventory(printWorks);
-        }
-        catch (Exception e){
-            PrintWorks.displayInventory(printWorks);
-        }
     }
 }
