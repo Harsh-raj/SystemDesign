@@ -4,6 +4,8 @@ import Command.*;
 import FlyWeight.RolePlayingGame.*;
 import FlyWeight.WordProcessor.ILetter;
 import FlyWeight.WordProcessor.LetterFactor;
+import Mediator.Auction;
+import Mediator.Bidder;
 import State.PrintOnline.PrintWorks;
 import State.PrintOnline.States.PrinterStates;
 import State.PrintOnline.Token;
@@ -319,6 +321,16 @@ public class Main {
 //        controller.pressButton(5);
 //        controller.pressButton(1);
 
-
+        Auction auction = new Auction();
+        auction.addBidder(new Bidder("A", auction)).addBidder(new Bidder("B", auction)).addBidder(new Bidder("C", auction));
+        auction.placeBid(auction.getBidder("A"), 100);
+        auction.placeBid(auction.getBidder("B"), 110);
+        auction.placeBid(auction.getBidder("C"), 150);
+        auction.placeBid(auction.getBidder("A"), 160);
+        auction.placeBid(auction.getBidder("B"), 180);
+        auction.placeBid(auction.getBidder("A"), 200);
+        auction.placeBid(auction.getBidder("C"), 250);
+        auction.placeBid(auction.getBidder("A"), -1);
+        auction.placeBid(auction.getBidder("B"), -1);
     }
 }
