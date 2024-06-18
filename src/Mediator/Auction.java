@@ -1,38 +1,36 @@
 package Mediator;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Auction implements AuctionMediator{
 
-    private List<Participants> bidders;
-    private int lastBid;
-    private int activeBidders;
+    private Map<Participants, Boolean> bidders;
+    private int highestBid;
+    private Participants highestBidder;
 
     public Auction(){
-        bidders = new ArrayList<>();
-        lastBid = 0;
-        activeBidders = 0;
+        bidders = new HashMap<>();
+        highestBid = 0;
     }
 
     public void removeBidderUpdate(Participants bidder){
-        --activeBidders;
+        bidders.put(bidder, false);
         for (Participants participant :
-                bidders)
+                bidders.keySet())
             if (!participant.getName().equals(bidder.getName())) {
                 System.out.println("To Bidder \"" + participant.getName() + "\": Bidder \"" + bidder.getName() + "\" bailed out!");
             }
+        winAuction();
     }
 
     @Override
     public void winAuction() {
-        if(activeBidders == 1)
-            for (Participants participants: bidders)
-                if(participants != this.bidders.get(0))
-                    System.out.println("To Bidder \""+participants.getName()+"\" Auction is over... \""+this.bidders.getFirst().getName()+"\" won the Auction!");
+        if(bidders.values().stream().filter(isActive -> isActive).count() == 1)
+            for (Participants participants: bidders.keySet())
+                if(participants != highestBidder)
+                    System.out.println("To Bidder \""+participants.getName()+"\": Auction is over... \""+this.bidders.entrySet().stream().filter(Map.Entry::getValue).map(entry ->entry.getKey().getName()).findFirst().get()+"\" won the Auction!");
                 else
-                    System.out.println("To Bidder \""+participants.getName()+"\" Auction is over... You won the Auction!");
+                    System.out.println("To Bidder \""+participants.getName()+"\": Auction is over... You won the Auction!");
     }
 
     @Override
@@ -41,42 +39,40 @@ public class Auction implements AuctionMediator{
     }
 
     @Override
-    public void placeBid(Participants bidder, int bidAmount) {
-        bidder.placeBid(bidAmount);
-        if(bidAmount!=-1) {
-            for (Participants participant :
-                    bidders)
-                if (!participant.getName().equals(bidder.getName())) {
-                    System.out.print("To Bidder \"" + participant.getName() + "\": ");
-                    bidder.receiveBidUpdate(bidAmount);
-                }
+    public void sendNewBidMessage(Participants participants, int curBid) {
+        for(Participants bidder: bidders.keySet()){
+            if(bidder != participants){
+                bidder.receiveBidUpdate(curBid);
+            }
         }
-        winAuction();
+    }
+
+    @Override
+    public void placeBid(Participants bidder, int bidAmount) {
+        if(bidAmount > highestBid){
+            highestBid = bidAmount;
+            highestBidder = bidder;
+            sendNewBidMessage(bidder, bidAmount);
+        }else{
+            System.out.println("To Bidder \""+bidder.getName()+"\": Set bid amount higher!");
+        }
     }
 
     @Override
     public AuctionMediator addBidder(Participants bidder) {
-        bidders.add(bidder);
+        bidders.put(bidder, true);
         sendNewBidderMessage(bidder);
-        ++activeBidders;
         return this;
-    }
-
-    @Override
-    public void setLastBid(int lastBid) {
-        this.lastBid = lastBid;
     }
 
     @Override
     public Participants getBidder(String name){
         if (name != null) {
-            for (Participants participants : bidders) {
+            for (Participants participants : bidders.keySet()) {
                 if (Objects.equals(participants.getName(), name))
                     return participants;
             }
         }
         return null;
     }
-
-
 }

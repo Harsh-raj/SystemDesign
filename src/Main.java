@@ -322,15 +322,20 @@ public class Main {
 //        controller.pressButton(1);
 
         Auction auction = new Auction();
-        auction.addBidder(new Bidder("A", auction)).addBidder(new Bidder("B", auction)).addBidder(new Bidder("C", auction));
+        auction.addBidder(new Bidder("A", auction)).addBidder(new Bidder("B", auction)).addBidder(new Bidder("C", auction)).addBidder(new Bidder("D", auction));
         auction.placeBid(auction.getBidder("A"), 100);
         auction.placeBid(auction.getBidder("B"), 110);
         auction.placeBid(auction.getBidder("C"), 150);
+        auction.placeBid(auction.getBidder("D"), 155);
         auction.placeBid(auction.getBidder("A"), 160);
         auction.placeBid(auction.getBidder("B"), 180);
+        auction.placeBid(auction.getBidder("C"), 190);
         auction.placeBid(auction.getBidder("A"), 200);
+        auction.placeBid(auction.getBidder("D"), 220);
+        auction.placeBid(auction.getBidder("B"), 230);
         auction.placeBid(auction.getBidder("C"), 250);
-        auction.placeBid(auction.getBidder("A"), -1);
-        auction.placeBid(auction.getBidder("B"), -1);
+        auction.removeBidderUpdate(auction.getBidder("A"));
+        auction.removeBidderUpdate(auction.getBidder("B"));
+        auction.removeBidderUpdate(auction.getBidder("D"));
     }
 }

@@ -13,17 +13,20 @@ public class Bidder implements Participants{
 
     @Override
     public void placeBid(int bidAmount) {
-        if(bidAmount!=-1)
-            auctionMediator.setLastBid(bidAmount);
-        else{
-            auctionMediator.removeBidderUpdate(this);
-        }
+        auctionMediator.placeBid(this, bidAmount);
+    }
+
+    @Override
+    public void leaveAuction(){
+        auctionMediator.removeBidderUpdate(this);
     }
 
     @Override
     public void receiveBidUpdate(int bidAmount) {
         System.out.println("Bidder \""+this.getName()+"\" places a bid amount of "+bidAmount);
     }
+
+
 
     @Override
     public String getName() {
