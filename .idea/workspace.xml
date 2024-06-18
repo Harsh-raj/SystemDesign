@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Mediator Design Pattern in Java">
+    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Correction in Mediator design pattern in Java">
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/BrowsingCoursesState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/Caretaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/LearningContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/LearningState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/TakingQuizState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Memento/OnlineLearning/WatchVideoState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/Auction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mediator/Auction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/AuctionMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mediator/AuctionMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/Bidder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mediator/Bidder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/Participants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mediator/Participants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -196,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718611727514</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Correction in Mediator design pattern in Java">
+      <option name="closed" value="true" />
+      <created>1718710269623</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718710269624</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +246,7 @@
     <MESSAGE value="State Design Pattern along with PrintWorks implementation in Java" />
     <MESSAGE value="Flywheel and Command Design Pattern in Java" />
     <MESSAGE value="Mediator Design Pattern in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mediator Design Pattern in Java" />
+    <MESSAGE value="Correction in Mediator design pattern in Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction in Mediator design pattern in Java" />
   </component>
 </project>

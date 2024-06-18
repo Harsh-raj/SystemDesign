@@ -12,7 +12,7 @@ import State.PrintOnline.Token;
 import State.VendingMachine.Coin;
 import State.VendingMachine.States.VendingState;
 import State.VendingMachine.VendingMachine;
-
+import Memento.OnlineLearning.User;
 public class Main {
     public static void main(String[] args) {
 //        // Press Opt+Enter with your caret at the highlighted text to see how
@@ -321,21 +321,31 @@ public class Main {
 //        controller.pressButton(5);
 //        controller.pressButton(1);
 
-        Auction auction = new Auction();
-        auction.addBidder(new Bidder("A", auction)).addBidder(new Bidder("B", auction)).addBidder(new Bidder("C", auction)).addBidder(new Bidder("D", auction));
-        auction.placeBid(auction.getBidder("A"), 100);
-        auction.placeBid(auction.getBidder("B"), 110);
-        auction.placeBid(auction.getBidder("C"), 150);
-        auction.placeBid(auction.getBidder("D"), 155);
-        auction.placeBid(auction.getBidder("A"), 160);
-        auction.placeBid(auction.getBidder("B"), 180);
-        auction.placeBid(auction.getBidder("C"), 190);
-        auction.placeBid(auction.getBidder("A"), 200);
-        auction.placeBid(auction.getBidder("D"), 220);
-        auction.placeBid(auction.getBidder("B"), 230);
-        auction.placeBid(auction.getBidder("C"), 250);
-        auction.removeBidderUpdate(auction.getBidder("A"));
-        auction.removeBidderUpdate(auction.getBidder("B"));
-        auction.removeBidderUpdate(auction.getBidder("D"));
+//        Auction auction = new Auction();
+//        auction.addBidder(new Bidder("A", auction)).addBidder(new Bidder("B", auction)).addBidder(new Bidder("C", auction)).addBidder(new Bidder("D", auction));
+//        auction.placeBid(auction.getBidder("A"), 100);
+//        auction.placeBid(auction.getBidder("B"), 110);
+//        auction.placeBid(auction.getBidder("C"), 150);
+//        auction.placeBid(auction.getBidder("D"), 155);
+//        auction.placeBid(auction.getBidder("A"), 160);
+//        auction.placeBid(auction.getBidder("B"), 180);
+//        auction.placeBid(auction.getBidder("C"), 190);
+//        auction.placeBid(auction.getBidder("A"), 200);
+//        auction.placeBid(auction.getBidder("D"), 220);
+//        auction.placeBid(auction.getBidder("B"), 230);
+//        auction.placeBid(auction.getBidder("C"), 250);
+//        auction.removeBidderUpdate(auction.getBidder("A"));
+//        auction.removeBidderUpdate(auction.getBidder("B"));
+//        auction.removeBidderUpdate(auction.getBidder("D"));
+
+        User user = new User("User1");
+
+        user.browseCourse();
+        user.watchVideo("Video 1");
+        user.takeQuiz("Quiz 1");
+        user.browseCourse();
+
+        user.undoAction();
+        user.undoAction();
     }
 }
