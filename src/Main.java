@@ -4,6 +4,7 @@ import Command.*;
 import FlyWeight.RolePlayingGame.*;
 import FlyWeight.WordProcessor.ILetter;
 import FlyWeight.WordProcessor.LetterFactor;
+import Interpreter.*;
 import Mediator.Auction;
 import Mediator.Bidder;
 import State.PrintOnline.PrintWorks;
@@ -13,6 +14,9 @@ import State.VendingMachine.Coin;
 import State.VendingMachine.States.VendingState;
 import State.VendingMachine.VendingMachine;
 import Memento.OnlineLearning.User;
+import Template.OnlinePayment.PayToFriend;
+import Template.OnlinePayment.PayToMerchant;
+
 public class Main {
     public static void main(String[] args) {
 //        // Press Opt+Enter with your caret at the highlighted text to see how
@@ -338,14 +342,43 @@ public class Main {
 //        auction.removeBidderUpdate(auction.getBidder("B"));
 //        auction.removeBidderUpdate(auction.getBidder("D"));
 
-        User user = new User("User1");
+//        User user = new User("User1");
+//
+//        user.browseCourse();
+//        user.watchVideo("Video 1");
+//        user.takeQuiz("Quiz 1");
+//        user.browseCourse();
+//
+//        user.undoAction();
+//        user.undoAction();
 
-        user.browseCourse();
-        user.watchVideo("Video 1");
-        user.takeQuiz("Quiz 1");
-        user.browseCourse();
+//        new PayToFriend().sendMoney();
+//        new PayToMerchant().sendMoney();
 
-        user.undoAction();
-        user.undoAction();
+        FormContext context = new FormContext();
+        context.setFieldValue("username", "Sunny");
+        context.setFieldValue("password", "sunnybeaches");
+        context.setFieldValue("email", "sunny@gmail.com");
+
+        ValidationExpression usernameValidation = new AndExpression(
+                new NonEmptyExpression("username"),
+                new MinLengthExpression("username", 5)
+        );
+        ValidationExpression passwordValidation = new AndExpression(
+                new NonEmptyExpression("password"),
+                new MinLengthExpression("password", 8)
+        );
+        ValidationExpression emailValidation = new AndExpression(
+                new NonEmptyExpression("email"),
+                new EmailFormatExpression("email")
+        );
+
+        boolean isUsernameValid = usernameValidation.interpret(context);
+        boolean isPasswordValid = passwordValidation.interpret(context);
+        boolean isEmailValid = emailValidation.interpret(context);
+
+        System.out.println("Username valid: " + isUsernameValid + "\nPassword valid: " + isPasswordValid + "\nEmail valid: " + isEmailValid);
+        if(isEmailValid && isPasswordValid && isUsernameValid) System.out.println("Form validation successful");
+        else System.out.println("Form needs the required correction for validation to be successful");
     }
 }
