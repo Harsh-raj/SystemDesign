@@ -112,6 +112,9 @@ import LLD.State.VendingMachine.VendingMachine;
 import LLD.Strategy.IncreaseValidityPlan;
 import LLD.Strategy.SeniorCtznPlan;
 import LLD.Strategy.StudentPlan;
+import LLD.Template.BasicEngineering;
+import LLD.Template.ComputerScience;
+import LLD.Template.Electronics;
 import LLD.Visitor.Element.PGStudent;
 import LLD.Visitor.Element.PHDStudent;
 import LLD.Visitor.Element.UGStudent;
@@ -459,30 +462,38 @@ public class Main {
 //        new PayToFriend().sendMoney();
 //        new PayToMerchant().sendMoney();
 
-        FormContext context = new FormContext();
-        context.setFieldValue("username", "Sunny");
-        context.setFieldValue("password", "sunnybeaches");
-        context.setFieldValue("email", "sunny@gmail.com");
+//        FormContext context = new FormContext();
+//        context.setFieldValue("username", "Sunny");
+//        context.setFieldValue("password", "sunnybeaches");
+//        context.setFieldValue("email", "sunny@gmail.com");
+//
+//        ValidationExpression usernameValidation = new AndExpression(
+//                new NonEmptyExpression("username"),
+//                new MinLengthExpression("username", 5)
+//        );
+//        ValidationExpression passwordValidation = new AndExpression(
+//                new NonEmptyExpression("password"),
+//                new MinLengthExpression("password", 8)
+//        );
+//        ValidationExpression emailValidation = new AndExpression(
+//                new NonEmptyExpression("email"),
+//                new EmailFormatExpression("email")
+//        );
+//
+//        boolean isUsernameValid = usernameValidation.interpret(context);
+//        boolean isPasswordValid = passwordValidation.interpret(context);
+//        boolean isEmailValid = emailValidation.interpret(context);
+//
+//        System.out.println("Username valid: " + isUsernameValid + "\nPassword valid: " + isPasswordValid + "\nEmail valid: " + isEmailValid);
+//        if(isEmailValid && isPasswordValid && isUsernameValid) System.out.println("Form validation successful");
+//        else System.out.println("Form needs the required correction for validation to be successful");
 
-        ValidationExpression usernameValidation = new AndExpression(
-                new NonEmptyExpression("username"),
-                new MinLengthExpression("username", 5)
-        );
-        ValidationExpression passwordValidation = new AndExpression(
-                new NonEmptyExpression("password"),
-                new MinLengthExpression("password", 8)
-        );
-        ValidationExpression emailValidation = new AndExpression(
-                new NonEmptyExpression("email"),
-                new EmailFormatExpression("email")
-        );
-
-        boolean isUsernameValid = usernameValidation.interpret(context);
-        boolean isPasswordValid = passwordValidation.interpret(context);
-        boolean isEmailValid = emailValidation.interpret(context);
-
-        System.out.println("Username valid: " + isUsernameValid + "\nPassword valid: " + isPasswordValid + "\nEmail valid: " + isEmailValid);
-        if(isEmailValid && isPasswordValid && isUsernameValid) System.out.println("Form validation successful");
-        else System.out.println("Form needs the required correction for validation to be successful");
+        BasicEngineering preferredCourse = new ComputerScience();
+        System.out.println("Computer Science course structure: ");
+        preferredCourse.displayCourseStructure();
+        System.out.println();
+        preferredCourse = new Electronics();
+        System.out.println("Electronics course structure: ");
+        preferredCourse.displayCourseStructure();
     }
 }

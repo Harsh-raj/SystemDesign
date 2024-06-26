@@ -4,192 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Interpreter design pattern in Java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/EconomicCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/EconomicCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/EconomicCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/EconomicCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/FactoryProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/FactoryProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/HatchBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/HatchBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/Limosine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/Limosine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/PremiumCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/PremiumCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/PremiumCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/PremiumCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/PremiumSedan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/PremiumSedan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/Sedan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/AbstractFactory/Sedan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adapter/AndroidAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adapter/AndroidCharger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adapter/IPhone15.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adapter/IPhone15Charger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adapter/IPhoneCharger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adapter/SamsungS24.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Adapter/SamsungS24Charger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/AutomateFeature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Cook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/HomeAutomation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Lights.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/Temperature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/UseCook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/UseLights.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bridge/UseTemperature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/AppleSmartPhone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/Director.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/SamsungSmartPhone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/SmartPhone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Builder/SmartPhoneBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Log/DebugLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Log/ErrorLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Log/InfoLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Log/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Login/AdminLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Login/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Login/StudentLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChainofCommand/Login/TeacherLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DroneDirectionCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DroneFlyDownCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DroneFlyUpCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DroneMoveBackward.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DroneMoveForward.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DronePrototype.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/DroneStayStable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/Calculator/ArithmeticExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/Calculator/Expression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/Calculator/Number.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/Calculator/Operation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/StorageFileSystem/Directory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/StorageFileSystem/File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Composite/StorageFileSystem/FileSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/AddOns/Bacon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/AddOns/CheeseSlice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/AddOns/FillerDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/AddOns/Lettuce.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/AddOns/Mayonnaise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/Burger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decorator/Meal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade/ECommerceFacade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade/Service/NotificationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade/Service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade/Service/PaymentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade/Service/ShipService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/ShapeInstanceFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/Square.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/RolePlayingGame/PlayerTeam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/RolePlayingGame/TeamBarracks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/RolePlayingGame/TeamOpFor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/RolePlayingGame/TeamRangers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/RolePlayingGame/TeamSAS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/RolePlayingGame/TeamSpetsnaz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/RolePlayingGame/TeamUniform.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/WordProcessor/DocumentCharacter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/WordProcessor/ILetter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlyWeight/WordProcessor/LetterFactor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter/AndExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter/EmailFormatExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter/FormContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter/MinLengthExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter/NonEmptyExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter/ValidationExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/CustomIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/UserIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/UserManagement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/Auction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/AuctionMediator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/Bidder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/Participants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/BrowsingCoursesState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/Caretaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/LearningContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/LearningState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/Memento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/TakingQuizState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento/OnlineLearning/WatchVideoState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullObject/NullOption.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullObject/Option.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullObject/Options.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullObject/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullObject/Quiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observable/GovtJobObservable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observable/ITJobObservable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observable/JobVacancyObservable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observable/TeachingJobObservable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observers/EmailObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observers/SMSObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observers/VacancyAlertObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observers/WebSiteObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prototype/Cake.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prototype/Prototype.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proxy/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proxy/ChatGroupMember.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proxy/ChatGroupProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proxy/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/InterfaceSegment/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/InterfaceSegment/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/LiskovSubstitution/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/LiskovSubstitution/Reel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/LiskovSubstitution/Upload.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/EMAIL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/SMS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/SendMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/OpenClosePrinciple/VoiceMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/Invoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/PrintInvoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SOLID/SingleResponsibility/SaveToDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Singleton/DoubleLocking/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Singleton/Eager/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Singleton/Lazy/Log_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Singleton/Synchronized/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/PrintWorks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/PrintedDoc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/Printer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/PrinterBatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/PrinterSpace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/PrinterType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/States/PrinterStates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/States/impl/DispatchPrintOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/States/impl/HasTokenPrinterState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/States/impl/IdlePrinterState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/States/impl/SelectionPrinterState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/PrintOnline/Token.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/Coin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/Inventory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/ItemShelf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/ItemType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/States/VendingState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/States/impl/DispenseVendingState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/States/impl/HasMoneyVendingState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/States/impl/IdleVendingState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/States/impl/SelectionVendingState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/VendingMachine/VendingMachine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/CustomPlan/CustomDataPlan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/CustomPlan/DataPlan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/CustomPlan/TalkTimePlan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/CustomPlan/ValidityPlan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/IncreaseValidityPlan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/Plan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/SeniorCtznPlan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/StudentPlan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/OnlinePayment/PayToFriend.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/OnlinePayment/PayToMerchant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/OnlinePayment/PaymentFlow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Element/PGStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Element/PHDStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Element/StudentElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Element/UGStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Visitor/HostleFeesVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Visitor/MessFeesVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Visitor/StudentVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visitor/Visitor/TuitionFeesVisitor.java" beforeDir="false" />
+    <list default="true" id="17acd99b-70f5-47fd-9da1-7daf49db243d" name="Changes" comment="Unsupervised folder pushed">
+      <change afterPath="$PROJECT_DIR$/src/LLD/Template/BasicEngineering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLD/Template/ComputerScience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLD/Template/Electronics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLD/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLD/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,7 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718804093630</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="LLD Separate folder created">
+      <option name="closed" value="true" />
+      <created>1719420271782</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1719420271782</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Unsupervised folder pushed">
+      <option name="closed" value="true" />
+      <created>1719420368823</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719420368824</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +296,9 @@
     <MESSAGE value="Correction in Mediator design pattern in Java" />
     <MESSAGE value="Memento design pattern in Java" />
     <MESSAGE value="Interpreter design pattern in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interpreter design pattern in Java" />
+    <MESSAGE value="LLD Separate folder created" />
+    <MESSAGE value="Unsupervised folder pushed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unsupervised folder pushed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
